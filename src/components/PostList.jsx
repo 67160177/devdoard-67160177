@@ -1,6 +1,8 @@
 import PostCard from "./PostCard";
+import PostCount from "./PostCount";
 
 function PostList({ posts }) {
+     console.log(posts);
   return (
     <div>
       <h2
@@ -12,6 +14,10 @@ function PostList({ posts }) {
       >
         โพสต์ล่าสุด
       </h2>
+
+      {/* ✅ ใส่ตรงนี้ */}
+      <PostCount count={posts.length} />
+
       {posts.map((post) => (
         <PostCard key={post.id} title={post.title} body={post.body} />
       ))}
