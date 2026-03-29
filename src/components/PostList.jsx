@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import PostCard from "./PostCard";
 import LoadingSpinner from "./LoadingSpinner";
 import { useFavorites } from "../context/FavoritesContext";
+import PostCount from "./PostCount";
 
 function PostList() {
   const { favorites, toggleFavorite } = useFavorites();
@@ -82,6 +83,8 @@ function PostList() {
           ไม่พบโพสต์ที่ค้นหา
         </p>
       )}
+
+      <PostCount count={posts.length} />
 
       {filtered.map((post) => (
         <PostCard
