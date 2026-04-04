@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function NotFoundPage() {
   return (
-    <div style={{ textAlign: "center", marginTop: "4rem" }}>
+    <div style={{ textAlign: "center", marginTop: "4rem", background: "#abc" }}>
       <h1 style={{ fontSize: "3rem", color: "#e53e3e" }}>404</h1>
       <p style={{ fontSize: "1.2rem", color: "#4a5568" }}>
         ไม่พบหน้าที่คุณต้องการ

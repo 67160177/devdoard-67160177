@@ -5,7 +5,7 @@ const FavoritesContext = createContext();
 
 // 2. Provider component — ครอบ App ทั้งหมด
 export function FavoritesProvider({ children }) {
-  const [favorites, setFavorites] = useState([]);
+  const [favorites, setFavorites] = useState([]); //favorites → array เก็บ id ของ post ที่กด favorite setFavorites → ใช้อัปเดตค่า
 
   function toggleFavorite(postId) {
     setFavorites((prev) =>

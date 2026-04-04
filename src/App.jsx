@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { FavoritesProvider } from "./context/FavoritesContext";
+import { FavoritesProvider } from "./context/FavoritesContext"; //ใช้เก็บข้อมูล “รายการโปรด” แล้วแชร์ให้ทั้งแอปใช้
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import PostDetailPage from "./pages/PostDetailPage";
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/posts/:id" element={<PostDetailPage />} />
-          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/profile.html" element={<ProfilePage />} />
           <Route path="/favorites" element={<FavoritesPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

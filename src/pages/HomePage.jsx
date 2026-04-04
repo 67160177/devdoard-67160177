@@ -1,5 +1,7 @@
 import PostList from "../components/PostList";
 import AddPostForm from "../components/AddPostForm";
+// PostList → แสดงโพสต์ทั้งหมด
+// AddPostForm → ฟอร์มสำหรับเพิ่มโพสต์ใหม่
 
 function HomePage() {
   return (
